@@ -30,7 +30,7 @@ def get_number
     input = gets.chomp
     break if valid_input?(input)
   end
-  input
+  return input
 end
 
 def valid_input?(input)
