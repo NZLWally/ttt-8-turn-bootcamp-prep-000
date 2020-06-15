@@ -1,6 +1,5 @@
 def turn(board)
-  puts 'Please enter 1-9:'
-  input = gets.chomp
+  input = get_number
   index = input_to_index(input)
   valid_move?(board, index)
 end
@@ -27,6 +26,14 @@ def input_to_index(input)
     turn(board)
   end
   index = input.to_i - 1
+end
+
+def get_number
+  loop do
+    puts 'Please enter 1-9:'
+    input = gets.chomp
+    break if valid_input?(input)
+  end
 end
 
 def valid_input?(input)
