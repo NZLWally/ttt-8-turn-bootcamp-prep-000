@@ -23,7 +23,7 @@ end
 
 def input_to_index(input)
   loop do
-    break if input.to_i.integer?
+    break if Integer(input).integer?
     turn(board)
   end
   index = input.to_i - 1
