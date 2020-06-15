@@ -22,7 +22,8 @@ def move(board, index, token = 'X')
 end
 
 def input_to_index(input)
-  until input.to_i.integer?
+  loop do
+    break if input.to_i.integer?
     turn(board)
   end
   index = input.to_i - 1
