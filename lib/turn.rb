@@ -28,7 +28,10 @@ def get_number
   loop do
     puts 'Please enter 1-9:'
     input = gets.chomp
-    break if valid_input?(input)
+    if valid_input?(input)
+      return input
+      break
+    end
   end
   return input
 end
