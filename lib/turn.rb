@@ -23,8 +23,12 @@ end
 
 def input_to_index(input)
   loop do
-    break if Integer(input).integer?
+    break if valid_input?(input)
     turn(board)
   end
   index = input.to_i - 1
+end
+
+def valid_input?(input)
+  input.to_i.to_s == input
 end
