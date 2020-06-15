@@ -1,3 +1,7 @@
+def turn
+  
+end
+
 def display_board(board)
   # print state of board
 end
