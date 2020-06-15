@@ -5,7 +5,10 @@ def turn(board)
 end
 
 def display_board(board)
-  # print state of board
+  puts board[0]|board[1]|board[2]
+  puts "-----------"
+  puts board[0]|board[1]|board[2]
+  puts board[0]|board[1]|board[2]
 end
 
 def valid_move?(board, index)
