@@ -21,10 +21,6 @@ def move(board, index, token = 'X')
 end
 
 def input_to_index(input)
-  loop do
-    break if valid_input?(input)
-    turn(board)
-  end
   index = input.to_i - 1
 end
 
